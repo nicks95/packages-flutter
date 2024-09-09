@@ -26,7 +26,11 @@ dependencies:
       url: https://github.com/nicks95/packages-flutter
       ref: main # branch name
       path: packages/google_maps_flutter/google_maps_flutter_android
-  google_maps_flutter_ios: ^2.12.0
+  google_maps_flutter_ios:
+    git:
+      url: https://github.com/nicks95/packages-flutter
+      ref: main # branch name
+      path: packages/google_maps_flutter/google_maps_flutter_ios
   google_maps_flutter_platform_interface: ^2.9.0
   google_maps_flutter_web: ^0.5.10
 
