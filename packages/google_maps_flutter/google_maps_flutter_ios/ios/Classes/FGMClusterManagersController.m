@@ -6,6 +6,7 @@
 
 #import "FGMMarkerUserData.h"
 #import "FLTGoogleMapJSONConversions.h"
+#import "GMUDefaultClusterIconGeneratorNick.h"
 
 @interface FGMClusterManagersController ()
 
@@ -42,7 +43,7 @@
 
 - (void)addClusterManager:(NSString *)identifier {
   id<GMUClusterAlgorithm> algorithm = [[GMUNonHierarchicalDistanceBasedAlgorithm alloc] init];
-  id<GMUClusterIconGenerator> iconGenerator = [[GMUDefaultClusterIconGenerator alloc] init];
+  id<GMUClusterIconGenerator> iconGenerator = [[GMUDefaultClusterIconGeneratorNick alloc] init];
   id<GMUClusterRenderer> renderer =
       [[GMUDefaultClusterRenderer alloc] initWithMapView:self.mapView
                                     clusterIconGenerator:iconGenerator];
